@@ -12,14 +12,14 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "phillyham's journal"
+title                    : "Hello World?"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Ham Heedon"
+subtitle                 : "phillyham's CS Process"
+name                     : "phillyham's CS Process"
 description              : "비전공생의 CS 공부 과정"
 url                      : "https://phillyham24.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
