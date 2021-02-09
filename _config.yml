@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "phillyham's journal"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Ham Heedon"
+description              : "비전공생의 CS 공부 과정"
 url                      : "https://phillyham24.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "phillyham24/phillyham24.github.io"
