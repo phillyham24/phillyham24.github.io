@@ -11,14 +11,14 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "aqua" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+remote_theme           : "mmistakes/minimal-mistakes"
+minimal_mistakes_skin    : "default" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Hello World?"
+locale                   : "en"
+title                    : "phillyham의 CS 과정"
 title_separator          : "-"
-subtitle                 : "phillyham's CS Process"
+#subtitle                 : "phillyham's CS Process"
 name                     : "phillyham's CS Process"
 description              : "비전공생의 CS 공부 과정"
 url                      : "https://phillyham24.github.io"
@@ -26,13 +26,13 @@ baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "phillyham24/phillyham24.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+masthead_title           : "Hello World?"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : www-phillyham24-github-io # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -52,8 +52,8 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
+search                   : true
+search_full_content      : true
 search_provider          : # lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
@@ -85,7 +85,7 @@ social:
   links: # An array of links to social media profiles
 
 # Analytics
-analytics:
+analytics:            
   provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
     tracking_id          :
@@ -94,7 +94,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "함희돈의 블로그"
+  name             : "Heedon Ham"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "비전공자의 와장창창 CS 개발과정"
   location         : "Seoul, Korea"
@@ -207,8 +207,8 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+permalink: /:title/
+paginate: 7 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
@@ -220,6 +220,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-mermaid
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -228,6 +229,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-mermaid
 
 
 # Archives
@@ -275,8 +277,10 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
-      read_time: true
-      comments: # true
+      author_profile: false
+      read_time: false
+      comments: true
       share: true
       related: true
+      toc: true
+      toc-sticky: true
